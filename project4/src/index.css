@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card{
+  height: 350px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.top img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+}
+
+.top button{
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  color: gray;
+  font-size: 13px;
+  border: 1px solid #dadada;
+  border-radius: 7px;
+  gap: 3px;
+}
+
+
+.center h3{
+  font-size: 18px;
+  font-weight: 500;
+}
+.center h3 span{
+  font-size: 10px;
+  font-weight: 400;
+  color: #c9c8c8;
+}
+
+.center h2{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.center-lable{
+  display: flex;
+  gap: 10px;
+}
+
+.center-lable h5{
+    background-color: rgb(231, 230, 230);
+    padding: 4px;
+    border-radius: 5px;
+    color: gray;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #dadada;
+  padding-top: 10px;
+}
+
+.bottom h3{
+  font-size: 20px;
+
+}
+.bottom p{
+  font-size: 10px;
+  color: gray;
+}
+
+.bottom button{
+  padding: 5px 10px;
+  background-color: #111;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+}
