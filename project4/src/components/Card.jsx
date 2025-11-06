@@ -29,7 +29,7 @@ const Card = (props) => {
                 </div>
                 <button>Apply Now</button>
             </div>
-
+ 
         </div>
     )
 }

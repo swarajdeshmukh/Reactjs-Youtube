@@ -1,7 +1,6 @@
-import React from 'react'
-
 import Card from './components/Card'
 
+//Data 
 const jobOpenings = [
   {
     brandLogo: "https://img.freepik.com/premium-vector/meta-company-logo_265339-667.jpg?semt=ais_hybrid&w=740&q=80",
