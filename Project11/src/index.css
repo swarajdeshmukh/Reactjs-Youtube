@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #111;
+}
+
+/* Main container */
+.main {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Left side */
+.left {
+  height: 100%;
+  width: 50%;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Form section */
+.form-div {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div form {
+  height: 100%;
+  width: 50%;
+  background-color: rgba(69, 67, 67, 0.863);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-div form input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.form-div form button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  resize: none;
+  color: #111;
+}
+
+.form-div form button:hover {
+  background: rgb(211, 210, 210);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* Right side */
+.right {
+  height: 100%;
+  width: 50%;
+  background-color: #111;
+  padding: 30px;
+  overflow: auto;
+  border-left: 2px solid #333;
+}
+
+/* Heading area */
+.right-heading {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Task container */
+.task-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+/* Each Task Card (auto width + height) */
+.task {
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 100%;
+  width: fit-content;   /* 👈 width depends on content */
+  height: fit-content;  /* 👈 height depends on content */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;     /* hide any potential overflow */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.task h3 {
+  font-size: 15px;
+  color: black;
+  background-color: rgb(225, 225, 225);
+  border-radius: 6px;
+  padding: 8px;
+  word-wrap: break-word;
+  white-space: normal;
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+.task p {
+  font-size: 15px;
+  color: #111;
+  border-radius: 6px;
+  padding: 8px;
+  word-wrap: break-word;
+  white-space: normal;
+  width: 100%;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.task button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(242, 91, 91);
+}
+
+.task button:hover{
+  background-color: rgb(240, 57, 57);
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* .main {
+    flex-direction: column;
+  } */
+
+  .left, .right {
+    width: 100%;
+    height: auto;
+  }
+
+  .left div h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .form-div form {
+    width: 80%;
+  }
+
+  .right-heading h1{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .task-div {
+    justify-content: center;
+  }
+
+  .task {
+    width: auto;
+    max-width: 90%;
+  }
+}
