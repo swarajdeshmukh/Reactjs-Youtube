@@ -6,7 +6,12 @@ const App = () => {
   const [discription, setDiscription] = useState('')
   const [task, setTask] = useState([])
 
+  // localStorage.clear()
+
   
+  const lcs = () =>{
+    localStorage.setItem('task', JSON.stringify(task))
+  }
 
   const submitHandler = (e) =>{
     e.preventDefault();
@@ -18,7 +23,7 @@ const App = () => {
 
     console.log(task)
 
-    console.log("submited...")
+    // console.log("submited...")
     setTitle('')
     setDiscription('')
   }
@@ -58,7 +63,7 @@ const App = () => {
               setDiscription(e.target.value)
             }}
             ></textarea>
-            <button>Add Task</button>
+            <button onClick={lcs}>Add Task</button>
           </form>
         </div>
 
